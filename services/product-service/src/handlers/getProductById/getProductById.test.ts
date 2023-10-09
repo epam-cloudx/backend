@@ -13,20 +13,18 @@ describe('getProductById()', () => {
   });
 
   it('throws error, when product is not found', async () => {
-    const result = await getProductById({ pathParameters: { productId: 12 } }, {} as Context, jest.fn());
+    const result = await getProductById({ pathParameters: { productId: 999999 } }, {} as Context, jest.fn());
 
     expect(result).toStrictEqual({
       statusCode: 404,
-      body: 'Could not found product with id: 12.',
+      body: 'Could not found product with id: 999999.',
     });
   });
 
   it('returns product', async () => {
-    const mockProduct = {
-      ...mock[0],
-      id: 1,
-    };
-    const result = await getProductById({ pathParameters: { productId: 1 } }, {} as Context, jest.fn());
+    const mockID = 3;
+    const mockProduct = mock.find((item) => item.id === mockID);
+    const result = await getProductById({ pathParameters: { productId: mockID } }, {} as Context, jest.fn());
 
     expect(result).toStrictEqual({
       statusCode: 200,
