@@ -1,8 +1,29 @@
 {
-  "name": "epam-cloudx-backend",
+  "name": "epam-cloudx",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "git@github.com:epam-cloudx/backend.git",
   "author": "Andras Vagner <andras.vagner@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "generate-service": "read -p 'Name of the service: ' name && serverless create --template aws-nodejs --path $name",
+    "deploy:product-service": "yarn workspace @epam-cloudx/product-service build:deploy",
+    "deploy:all": "yarn deploy:product-service"
+  },
+  "dependencies": {
+    "serverless": "^3.35.2"
+  },
+  "workspaces": [
+    "services/*"
+  ],
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.124",
+    "@types/node": "^20.8.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "eslint": "^8.51.0",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2"
+  }
 }

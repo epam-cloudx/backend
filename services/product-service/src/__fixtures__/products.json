@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Black Sheep",
+    "price": 18000,
+    "url": "https://logo.com/black-sheep.png"
+  },
+  {
+    "id": 2,
+    "name": "White Sheep",
+    "price": 12000,
+    "url": "https://logo.com/white-sheep.png"
+  }
+]

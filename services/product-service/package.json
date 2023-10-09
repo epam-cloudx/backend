@@ -1,0 +1,13 @@
+{
+  "name": "@epam-cloudx/product-service",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "sls deploy",
+    "build": "tsc -b",
+    "build:deploy": "yarn build && yarn deploy",
+    "watch": "tsc --watch",
+    "lint": "eslint --fix src/**/*.ts"
+  }
+}
