@@ -1,0 +1,8 @@
+{
+  "name": "epam-cloudx-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:epam-cloudx/backend.git",
+  "author": "Andras Vagner <andras.vagner@gmail.com>",
+  "license": "MIT"
+}
