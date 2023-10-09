@@ -14,7 +14,7 @@ info:
     The program consists of more than 10 step-by-step practice tasks that will result in practical experience working with Node.js artifacts implementing partials of RESTful API web server and relevant components, deploying and hosting micro-service applications in AWS Cloud, and hands-on experience working with Cloud Databases.
 
 servers:
-  - url: https://pyv1i0ubz8.execute-api.eu-west-1.amazonaws.com
+  - url: https://tv8j1z5yfb.execute-api.eu-west-1.amazonaws.com/dev
     description: dev
 paths:
   /products:
