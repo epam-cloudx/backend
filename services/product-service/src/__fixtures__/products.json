@@ -1,14 +1,62 @@
 [
   {
-    "id": 1,
-    "name": "Black Sheep",
-    "price": 18000,
-    "url": "https://logo.com/black-sheep.png"
+    "id": 2,
+    "title": "Red Velvet Cake",
+    "description": "Delicious homemade red velvet cake.",
+    "price": 2500
   },
   {
-    "id": 2,
-    "name": "White Sheep",
-    "price": 12000,
-    "url": "https://logo.com/white-sheep.png"
+    "id": 3,
+    "title": "Wireless Bluetooth Headphones",
+    "description": "High-quality wireless headphones with noise-cancellation.",
+    "price": 8000
+  },
+  {
+    "id": 4,
+    "title": "Classic Leather Wallet",
+    "description": "Genuine leather wallet with multiple card slots.",
+    "price": 1500
+  },
+  {
+    "id": 5,
+    "title": "Smartphone Holder for Car",
+    "description": "Universal phone holder for your car's dashboard.",
+    "price": 500
+  },
+  {
+    "id": 6,
+    "title": "Stainless Steel Water Bottle",
+    "description": "Durable, eco-friendly water bottle for outdoor activities.",
+    "price": 1200
+  },
+  {
+    "id": 7,
+    "title": "Camping Tent",
+    "description": "Spacious 4-person camping tent with waterproof design.",
+    "price": 5500
+  },
+  {
+    "id": 8,
+    "title": "Fitness Tracker Watch",
+    "description": "Track your fitness goals with this sleek smartwatch.",
+    "price": 3500
+  },
+  {
+    "id": 9,
+    "title": "Digital Camera",
+    "description": "High-resolution digital camera for capturing stunning photos and videos.",
+    "price": 7500
+  },
+  {
+    "id": 10,
+    "title": "Coffee Maker Machine",
+    "description": "Automated coffee maker for brewing your favorite coffee at home.",
+    "price": 2800
+  },
+  {
+    "id": 11,
+    "title": "Gaming Laptop",
+    "description": "Powerful gaming laptop with top-notch graphics and performance.",
+    "price": 12000
   }
 ]

@@ -1,5 +1,5 @@
 import { Handler } from 'aws-lambda';
-import productsMock from '../__fixtures__/products.json';
+import productsMock from '../../__fixtures__/products.json';
 
 export const getProductById: Handler = async (event) => {
   const id = Number(event.pathParameters.productId);
@@ -7,7 +7,7 @@ export const getProductById: Handler = async (event) => {
   if (!id) {
     return {
       statusCode: 400,
-      body: `Product ID is not valid: ${id}.`,
+      body: `Product ID is not valid: ${event.pathParameters.productId}.`,
     };
   }
 

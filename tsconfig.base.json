@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "resolveJsonModule": true,
-    "target": "ES2018",
+    "target": "ES2022",
     "module": "commonjs",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -11,6 +11,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "removeComments": true,
-    "sourceMap": true
+    "sourceMap": true,
   }
 }
