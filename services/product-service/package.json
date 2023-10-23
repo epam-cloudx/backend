@@ -1,0 +1,15 @@
+{
+  "name": "@epam-cloudx/product-service",
+  "version": "1.0.0",
+  "description": "Serverless CloudX product service",
+  "main": "serverless.ts",
+  "scripts": {
+    "deploy": "sls deploy",
+    "invoke:products": "serverless invoke local --function products",
+    "invoke:product": "serverless invoke local --function product --path src/functions/product/path.json",
+    "lint": "eslint --fix src/**/*.ts",
+    "test": "jest"
+  },
+  "author": "Andras Vagner <andras.vagner@gmail.com>",
+  "license": "MIT"
+}

@@ -1,0 +1,110 @@
+openapi: 3.1.0
+info:
+  title: EPAM CloudX - AWS
+  version: 1.0.0
+  contact:
+    name: Andras Vagner
+    url: 'https://andras.vagner.hu'
+    email: andras@vagner.hu
+  description: |
+    # Introduction
+
+    The cross-country global training program aims to improve corresponding hands-on skills of full-stack development with a primary focus on NodeJS in AWS Cloud from an e2e application perspective.
+
+    The program consists of more than 10 step-by-step practice tasks that will result in practical experience working with Node.js artifacts implementing partials of RESTful API web server and relevant components, deploying and hosting micro-service applications in AWS Cloud, and hands-on experience working with Cloud Databases.
+
+servers:
+  - url: https://tv8j1z5yfb.execute-api.eu-west-1.amazonaws.com/dev
+    description: dev
+paths:
+  /products:
+    get:
+      summary: Products
+      tags:
+        - Products
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  statusCode:
+                    type: number
+                  body:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Product'
+              examples:
+                All:
+                  value:
+                    statusCode: 200
+                    body:
+                      -
+                        id: 1
+                        name: "Black Sheep"
+                        description: "A black sheep with perfect teeth"
+                        price: 18000
+                      -
+                        id: 2
+                        name: "White Sheep"
+                        description: "A white sheep with perfect teeth"
+                        price: 12000
+      operationId: get-products
+      description: Get the list of available products
+
+
+  /products/{id}:
+    get:
+      summary: Product by ID
+      tags:
+        - Products
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: integer
+            minimum: 1
+          description: The product ID
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  statusCode:
+                    type: number
+                  body:
+                    $ref: '#/components/schemas/Product'
+              examples:
+                All:
+                  value:
+                    statusCode: 200
+                    body:
+                      id: 1
+                      name: Product Name
+                      price: 18000
+      operationId: get-product
+      description: Get the any product by id
+x-tagGroups:
+  - name: Endpoints
+    tags:
+      - Products
+
+components:
+  schemas:
+    Product:
+      type: object
+      properties:
+        id:
+          type: number
+        name:
+          type: string
+        description:
+          type: string
+        price:
+          type: number
