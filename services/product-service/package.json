@@ -9,6 +9,7 @@
     "invoke:product": "serverless invoke local --function product --path src/functions/product/path.json",
     "invoke:createProduct": "serverless invoke local --function createProduct --path src/functions/createProduct/path.json",
     "lint": "eslint --fix src/**/*.ts",
+    "migrate": "npx ts-node src/__fixtures__/migrate.ts",
     "test": "jest"
   },
   "author": "Andras Vagner <andras.vagner@gmail.com>",
