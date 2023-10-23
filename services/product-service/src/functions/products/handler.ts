@@ -16,7 +16,7 @@ const products: Handler = async () => {
 
     const stocks = await client.send(
       new ScanCommand({
-        TableName: process.env.PRODUCTS_TABLE,
+        TableName: process.env.STOCKS_TABLE,
       })
     );
 
