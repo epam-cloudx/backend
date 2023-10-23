@@ -7,6 +7,7 @@
     "deploy": "sls deploy",
     "invoke:products": "serverless invoke local --function products",
     "invoke:product": "serverless invoke local --function product --path src/functions/product/path.json",
+    "invoke:createProduct": "serverless invoke local --function createProduct --path src/functions/createProduct/path.json",
     "lint": "eslint --fix src/**/*.ts",
     "test": "jest"
   },
